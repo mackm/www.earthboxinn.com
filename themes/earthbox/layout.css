@@ -1,0 +1,294 @@
+
+/**
+ * @file
+ * Stark layout method
+ *
+ * To avoid obscuring CSS added to the page by Drupal or a contrib module, the
+ * Stark theme itself has no styling, except just enough CSS to arrange the page
+ * in a traditional "Header, sidebars, content, and footer" layout.
+ *
+ * This layout method works reasonably well, but shouldn't be used on a
+ * production site because it can break. For example, if an over-large image
+ * (one that is wider than 20% of the viewport) is in the left sidebar, the
+ * image will overlap with the #content to the right. The exception to this
+ * is IE6 which will just hide the navigation block completely in these
+ * instances due to a positioning bug.
+
+*/
+
+
+body {
+	font-family:Verdana, Geneva, sans-serif;
+	background: #BDB1A6;
+	margin: 0;
+	padding: 0;
+}
+
+
+#page h1{
+display: none;	
+}
+
+
+#container {
+	width: 930px;
+	margin: 0 auto;
+	padding: 0;
+	
+}
+
+#page-wrapper {
+	width: 930px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#header {
+	background-color: red;
+	display: none;
+	
+}
+
+#breadcrumb {
+		background-color: red;
+	display: none;
+
+}
+
+
+#content .column {
+background-color: red;	
+}
+
+#navigation .section h2 {
+	color: red;
+	display: none;
+	}
+
+
+#navigation ul {
+    margin:20px 0 0 0;
+	padding 0;
+	float:left;
+	width:930px;
+	list-style-type:none;
+ }
+
+#navigation li {
+	display: inline;
+}
+
+
+#content,
+#sidebar-first,
+#sidebar-second {
+  float: left;
+  display: inline;
+  position: relative;
+
+}
+
+#sidebar-first {
+  background-color: white;
+  margin-left: 100;  
+}
+
+#content {
+  width: 100%;
+}
+
+body.sidebar-first #content {
+  width: 80%;
+  left: 20%; 
+}
+body.sidebar-second #content {
+  width: 80%;
+}
+body.two-sidebars #content {
+
+  width: 60%;
+  left: 20%;
+}
+
+#sidebar-first {
+  width: 20%;
+  left: -80%; 
+  margin-top: 10px;
+  background-color: white;
+}
+
+#block-menu-menu-front-page-left {
+background-color: teal;	
+}
+
+
+
+body.two-sidebars #sidebar-first {
+  left: -60%; 
+  background-color: red;
+}
+
+#sidebar-second {
+  float: right; 
+  width: 20%;
+  xbackground-color: green;
+  
+}
+
+.section {
+  margin: 10px;
+}
+
+
+#navigation .section {
+margin: 0px;
+}
+
+#navigation .section li a {
+	font-size:15px;
+    float: right;
+    widthx: 166px;
+	    width: 166px;
+    text-align: center;
+	text-decoration: none;	
+    background: #603913;
+    padding: 6px 9px;
+	border-right: 2px solid #BDB1A6;
+	cursor: hand; 
+	cursor: pointer;
+}
+
+#navigation .section li a {
+	color: #E0D9D1;
+}
+
+navigation home .menu-230 grass #A3A86B{}
+navigation dining  .menu-363 orange #C75B12;{}
+navigation howToGetHere .menu-364 papaya #FFD65A{}
+navigation theSpa .menu-365 lavender #A3A86B{}
+navigation pool .menu-366 blue #99BFE5{}
+
+#navigation .section li.menu-230 a.active {
+color: #A3A86B;	
+}
+#navigation .section li.menu-230 a:hover {
+color: #A3A86B;	
+}
+
+#navigation .section li.menu-363 a.active {
+color: #C75B12;	
+}
+#navigation .section li.menu-363 a:hover {
+color: #C75B12;
+}
+
+#navigation .section li.menu-364 a.active {
+color: #FFD65A;	
+}
+#navigation .section li.menu-364 a:hover {
+color: #FFD65A;
+}
+
+#navigation .section li.menu-365 a.active {
+color: #A3A86B;	
+}
+#navigation .section li.menu-365 a:hover {
+color: #A3A86B;
+}
+
+#navigation .section li.menu-366 a.active {
+color: #99BFE5;	
+}
+#navigation .section li.menu-366 a:hover {
+color: #99BFE5;	
+}
+
+#main-wrapper #main #content{
+background-color:green;	
+}
+
+
+.view-content {
+background-color: white;
+padding: 12px;
+height: 280px;
+width: 709px;
+}
+
+
+#block-system-main { 
+background-color: blue;
+
+}
+
+ul .menu {
+	background-color: green;
+
+text-align: right;	
+
+}
+
+#block-menu-menu-front-page-left .content ul.menu {
+background-color: yellow;
+text-align: right;	
+}
+
+
+ul li.leaf {
+list-style: none;
+list-style-type: none;
+list-style-image: none;
+}
+    
+.leaf a {
+color: black;
+}
+
+
+#logo {
+position: relative;
+left: -30px;
+width: 240px;
+padding-top: 15px;
+}
+
+
+
+/*
+
+
+
+
+
+
+#navigation a:hover, a:active, a:focus {
+	text-decoration:none;	
+}
+
+
+#main-menu li a:hover{
+xcolor: #C75B12;
+	}
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-364 {
+color: red;	
+}
+
+
+ */

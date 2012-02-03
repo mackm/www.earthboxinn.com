@@ -1,0 +1,641 @@
+@charset "UTF-8";
+
+/* body affects everything that appears in the window */
+body {
+	font-family:Verdana, Geneva, sans-serif;
+	background: #BDB1A6;
+	margin: 0;
+	padding: 0;
+}
+
+/* Normalize browsers */
+ul, ol, dl {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+
+	font-variant: normal;
+	font-style:normal;
+	font-weight:normal;
+	margin: 0 0 15px 0;
+	padding:0;
+}
+
+h1 {
+	font-size:26px;
+}
+
+h2 {
+	font-size:12px;
+	font-weight:bold;
+}
+
+a img { 
+	border: none;
+}
+
+img {
+	border: none;
+	margin:0;
+}
+ 
+/* container is the outermost content container - provides fixed width */
+#container {
+	width: 930px;
+	margin: 0 auto;
+	padding: 0;
+}
+	
+/* headnav behaviors are further defined in the color section */
+
+.headnav ul {
+    margin:20px 0 0 0;
+	padding 0;
+	float:left;
+	width:930px;
+	list-style-type:none;
+ }
+
+.headnav a {
+	font-size:15px;
+    float: right;
+    width: 166px;
+    text-align: center;
+	text-decoration: none;
+	color: #E0D9D1;
+    background: #603913;
+    padding: 6px 9px;
+}
+
+.headnav a:hover, a:active, a:focus {
+	text-decoration:none;
+}
+
+.headnav li {
+	display: inline;
+}
+
+.headnav .sepright a {
+	border-right: 2px solid #BDB1A6;
+}
+
+/* Menu components for the vertical menue in the left sidebar */
+.lnav {
+	color: #000;
+	float:left;
+	margin-top:10px;
+	font-size:18px;
+}
+
+ul.lnav {
+	list-style: none;
+	margin:0 10px 0 0;
+	padding:0; 
+	text-align: right;
+}
+
+ul.lnav li {
+	padding-top:12px;
+}
+
+ul.lnav a, ul.lnav a:visited { 
+	display: block; 
+	width: 155px;  
+	color: #000;
+	text-decoration: none;
+}
+
+ul.lnav a:hover,ul.lnav a:active, ul.lnav a:focus {
+	color: #000;
+}
+ 
+/* Category-specific color behavior for sidebar links and content*/
+
+/* BROWN */
+
+.brown {
+	color:#94B5E0;
+}
+
+/* GRASS */
+
+.grass {
+	color: #A3A86B;
+}
+
+.headnav a.grass:hover, a.grass:focus {
+	color: #A3A86B;
+}
+
+.headnav a.grass:active {
+	color: #A3A86B;
+}
+
+.headnav .current a.grass {
+	color: #A3A86B;
+}
+
+ul.lnav li a.grass:hover, ul.lnav li a.grass:active, ul.lnav li a.grass:focus {
+	color: #A3A86B;
+}
+
+ul.lnav li.current a.grass, ul.nav li.current a.grass:hover {
+	color: #A3A86B;
+	background-color: #ffffff;
+}
+
+.grass_page a {
+	text-decoration:none;
+	color:#A3A86B;
+}
+
+.grass_page a:hover, a:focus{
+	text-decoration: underline;
+	color:#A3A86B;
+}
+
+.grass_page a:active {
+	text-decoration:none;
+	color:#A3A86B;
+}
+
+.grass_page h1 {
+	color: #A3A86B;
+}
+ 
+/* -- BLUE -- */
+
+.blue {
+	color:#99BFE5;
+}
+
+.headnav a.blue:hover, a.blue:focus {
+	color: #99BFE5;
+}
+
+.headnav a.blue:active {
+	color: #99BFE5;
+}
+
+.headnav .current a.blue {
+	color: #99BFE5;
+}
+
+ul.lnav li a.blue:hover, ul.lnav li a.blue:active, ul.lnav li a.blue:focus {
+	color: #99BFE5;
+}
+
+ul.lnav li.current a.blue , ul.lnav li.current a.blue:hover{
+	color: #99BFE5;
+	background: #ffffff;
+}
+
+.blue_page a {
+	text-decoration:none;
+	color:#99BFE5;
+}
+
+.blue_page a:hover, a:focus{
+	text-decoration: underline;
+	color:#99BFE5;
+}
+
+.blue_page a:active {
+	text-decoration:none;
+	color:#99BFE5;
+}
+
+.blue_page h1 {
+	color: #99BFE5;
+}
+ 
+/* LAVENDER */
+
+.lavender {
+	color: #9093CE;
+}
+
+.headnav a.lavender:hover, a.lavender:focus {
+	color: #9093CE;
+}
+
+.headnav a.lavender:active {
+	color: #9093CE;
+}
+
+.headnav .current a.lavender {
+	color: #9093CE;
+}
+
+ul.lnav li a.lavender:hover, ul.lnav li a.lavender:active, ul.lnav li a.lavender:focus {
+	color: #9093CE;
+}
+
+ul.lnav li.current a.lavender, ul.lnav li.current a.lavender:hover {
+	color: #9093CE;
+	background: #ffffff;
+}
+
+.lavender_page a {
+	text-decoration:none;
+	color:#9093CE;
+}
+
+.lavender_page a:hover, a:focus{
+	text-decoration: underline;
+	color:#9093CE;
+}
+
+.lavender_page a:active {
+	text-decoration:none;
+	color:#9093CE;
+}
+
+.lavender_page h1 {
+	color: #9093CE;
+}
+
+/* PAPAYA */
+
+.papaya {
+	color: #FFD65A;
+}
+
+.headnav a.papaya:hover, a.papaya:focus {
+	color: #FFD65A;
+}
+
+.headnav a.papaya:active {
+	color: #FFD65A;
+}
+
+.headnav .current a.papaya {
+	color: #FFD65A;
+}
+
+ul.lnav li a.papaya:hover, ul.lnav li a.papaya:active, ul.lnav li a.papaya:focus {
+	color: #FFD65A;
+}
+
+ul.lnav li.current a.papaya, ul.lnav li.current a.papaya:hover {
+	color: #FFD65A;
+	background: #ffffff;
+}
+
+.papaya_page a {
+	text-decoration:none;
+	color:#FFD65A;
+}
+
+.papaya_page a:hover, a:focus{
+	text-decoration: underline;
+	color:#FFD65A;
+}
+
+.papaya_page a:active {
+	text-decoration:none;
+	color:#FFD65A;
+}
+
+.papaya_page h1 {
+	color: #FFD65A;
+}
+
+/* SEAFOAM */
+
+.seafoam {
+	color: #99CCC3;
+}
+
+.headnav a.seafoam:hover, a.seafoam:focus {
+	color: #99CCC3;
+}
+
+.headnav a.seafoam:active {
+	color: #99CCC3;
+}
+
+.headnav .current a.seafoam {
+	color: #99CCC3;
+}
+
+ul.lnav li a.seafoam:hover, ul.lnav li a.seafoam:active, ul.lnav li a.seafoam:focus {
+	color: #99CCC3;
+}
+
+ul.lnav li.current a.seafoam, ul.lnav li.current a.seafoam:hover {
+	color: #99CCC3;
+	background: #ffffff;
+}
+
+.seafoam_page a {
+	text-decoration:none;
+	color:#99CCC3;
+}
+
+.seafoam_page a:hover, a:focus{
+	text-decoration: underline;
+	color:#99CCC3;
+}
+
+.seafoam_page a:active {
+	text-decoration:none;
+	color:#99CCC3;
+}
+
+.seafoam_page h1 {
+	color: #99CCC3;
+}
+
+/* ORANGE */
+
+.orange {
+	color: #C75B12;
+}
+
+.headnav a.orange:hover, a.orange:focus {
+	color: #C75B12;
+}
+
+.headnav a.orange:active {
+	color: #C75B12;
+}
+
+.headnav .current a.orange {
+	color: #C75B12;
+}
+
+ul.lnav li a.orange:hover, ul.lnav li a.orange:active, ul.lnav li a.orange:focus {
+	color: #C75B12;
+}
+
+ul.lnav li.current a.orange, ul.lnav li.current a.orange:hover {
+	color: #C75B12;
+	background: #ffffff;
+}
+
+.orange_page a {
+	text-decoration:none;
+	color:#C75B12;
+}
+
+.orange_page a:hover, a:focus{
+	text-decoration: underline;
+	color:#C75B12;
+}
+
+.orange_page a:active {
+	text-decoration:none;
+	color:#C75B12;
+}
+
+.orange_page h1 {
+	color: #C75B12;
+}
+
+/* Wraper to provide an even length background for sidebar and copy */
+
+#bg_wrap {
+	margin-top:10px;
+	width: 930px;
+	background-color: #ffffff;
+	float:left;
+}
+
+#lh_sidebar{
+	margin-right:0px;
+	float: left;
+	width: 185px;
+	background:#FFF;
+    border-right-style: solid;
+	border-right-color: #BDB1A6;
+	border-right-width: 12px;
+}
+
+#logo {
+	position:relative;
+	left:-30px;
+	width: 240px;
+	padding-top:15px;
+}
+
+#worldweb {
+	float: left;
+	text-align: center;
+	margin: 50px 0 30px 10px;
+	padding: 10px 0 10px 20px;
+	width: 143px;
+	background: #ffffff;
+	color: #000;
+	border: 1px solid;
+}
+	
+#rh_wrap { /*this wrapper puts the line between the left sidebar and right content */
+	position:relative;
+	
+	float: left;
+	width: 711px;
+	left:-12px;
+	border-left-style: solid;
+	border-left-color: #BDB1A6;
+	border-left-width: 12px;
+	
+} 
+
+#rh_top_pict {
+	float:left;
+	width:709px;
+	padding: 12px;
+	padding-bottom:9px;
+	color: #FFF;
+	border-bottom-style:solid;
+	border-bottom-color: #BDB1A6;
+	border-bottom-width:12px;
+}
+
+
+#rh_bot_copy {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	float:left;
+	width:683px;
+	background-color:#fff;
+	padding: 25px 25px 30px 25px;
+}
+
+.rm_page p {
+	margin-bottom:5px;
+}
+
+.rm_page h1.sub {
+	margin-top:0;
+}
+
+
+#rh_bot_copy ul {
+	margin-left:24px;
+}
+
+#copy_box {
+	float: left;
+	width:420px;
+	padding:0;
+	margin:0;
+}
+
+.sm_font {
+	font-size: 10px;
+}
+
+.bg_font {
+	font-size:14px;
+}
+
+#tablist {
+  float:left;
+  width:733px;
+  line-height:normal;
+}
+  
+#tablist ul {
+  margin:0;
+  padding:0px;
+  list-style:none;
+}
+
+#tablist li {
+  float: left;
+  margin: 0;
+  padding: 0 0 0 0px;
+  background-color:#BDB1A6;
+}
+
+#tablist a {
+  float: left;
+  display: block;
+  width: 99px;
+  text-align: center;
+  padding: 5px 1px 4px 1px;
+  text-decoration: none;
+  font-weight: normal;
+  color: #603913;
+  border-color: #F2F0ED;
+  border-width: 2px 2px 0px 0px;
+  border-style:solid;
+}
+
+#tablist #sixtab {
+	width:117px;
+}
+
+/* Commented Backslash Hack
+   hides rule from IE5-Mac \*/
+#tablist a {float:none;}
+/* End IE5-Mac hack */
+#tablist a:hover {
+  color:#FFFFFF;
+}
+#tablist a:active {
+	 color: #603913;
+	 background-color:#FFFFFF;
+}
+
+#tablist #current a {
+	  background-color:#FFFFFF;
+ /*     border-width:0;
+	  padding-right:2px;
+	  padding-top:7px; */
+}
+
+#tablist #current a:hover {
+	  background-color:#FFFFFF;
+/*      border-width:0;
+	  padding-right:2px; 
+	  padding-top:7px; */
+ 	  color: #603913;
+}
+
+
+
+#tablist #left_tab a {
+	  border-left: #F2F0ED 2px solid;
+	  padding-left:2px;
+	  padding-right:2px; 
+}
+
+#tablist #left_current a {
+	  background-color:#FFFFFF; 
+ 	  padding-left:3px;
+	  padding-right:3px; 
+/*	  border-width:0;  */
+	
+}
+
+#tablist #left_current a:hover, #tablist #left_current a:active {
+      background-color:#FFFFFF;
+ 	  color: #603913;
+}
+
+/* Graphics for right had side of page copy */
+ 
+.sun_logo {
+	  padding-left:80px; 
+	  padding-top:35px; 
+}
+  
+.grass_logo {
+	 padding-left:75px; 
+	 padding-top:30px;
+}
+ 
+.water_logo {
+	 padding-left:68px;
+	 padding-top:110px; 
+}
+ 
+ #address {
+	float:left;
+	width:175px;
+	text-align:right;
+	padding:0 10px 0 0; 
+	margin: 10px 10px 0 0;
+    font-size:12px;
+	color: #603913;
+}
+
+#copyright {
+	float:left;
+	width: 580px;
+	text-align: center;
+	margin-top:30px;
+	font-size:10px;
+}
+
+#copyright p {
+    padding:0;
+	margin: 10px 0 0 0;
+}
+	
+#copyright a {
+	text-decoration:none;
+	color:#d22e30;
+}
+
+#copyright a:hover {
+	text-decoration:underline;
+}
+
+#br_ref {
+	font-size:12px;
+	padding-top:20px;
+	padding-bottom:10px;
+	text-align:center;
+}
+
+#br_ref a {
+	color:#A3A86B;
+	text-decoration:none;
+}
