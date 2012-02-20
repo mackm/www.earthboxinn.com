@@ -68,8 +68,10 @@
 ?>
 
   <div id="page-wrapper"><div id="page">
+  <!--
+  Colin killed this ...
   <h1>Hello World</h1>
-
+  --> 
     <div id="header"><div class="section clearfix">
 
       <?php if ($logo): ?>
@@ -116,6 +118,30 @@
     <?php print $messages; ?>
 
     <div id="main-wrapper"><div id="main" class="clearfix">
+      <?php if ($page['sidebar_first']): ?>
+      <div id="sidebar-first" class="column sidebar">
+      <!-- 
+      Colin added Code for logo below 2012 02 01
+      Added 
+      --> 
+        <div id="logo"> 
+   <!--     
+      <img src="http://localhost/sites/www.earthboxinn.com/files/themes/earthbox/eb logo l.jpg"> 
+      <img style="position:relative; top:10px; left:-6px" src="http://localhost/sites/www.earthboxinn.com/files/themes/earthbox/eb logo r.jpg"> 
+   -->
+
+      <?php print('<img src="'.file_create_url(file_build_uri('/themes/earthbox/eb logo l.jpg')).'">'); ?>
+      <?php print('<img style="position:relative; top:10px; left:-6px" src="'.file_create_url(file_build_uri('/themes/earthbox/eb logo r.jpg')).'">'); ?>
+         
+      </div>
+        <!--
+        end logo code
+        -->
+        
+        <div class="section">
+          <?php print render($page['sidebar_first']); ?>
+        </div></div> <!-- /.section, /#sidebar-first -->
+      <?php endif; ?>
 
       <div id="content" class="column"><div class="section">
         <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
@@ -130,24 +156,7 @@
         <?php print $feed_icons; ?>
       </div></div> <!-- /.section, /#content -->
 
-      <?php if ($page['sidebar_first']): ?>
-        <div id="sidebar-first" class="column sidebar">
-      <!-- 
-      Colin added Code for logo below 2012 02 01
-      Added 
-      --> 
-        <div id="logo"> 
-      <img src="sites/www.earthboxinn.com/files/themes/earthbox/eb logo l.jpg"> 
-      <img style="position:relative; top:10px; left:-6px" src="sites/www.earthboxinn.com/files/themes/earthbox/eb logo r.jpg"> 
-      </div>
-        <!--
-        end logo code
-        -->
-        
-        <div class="section">
-          <?php print render($page['sidebar_first']); ?>
-        </div></div> <!-- /.section, /#sidebar-first -->
-      <?php endif; ?>
+
 
       <?php if ($page['sidebar_second']): ?>
         <div id="sidebar-second" class="column sidebar"><div class="section">

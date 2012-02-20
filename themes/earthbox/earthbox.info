@@ -10,3 +10,4 @@ version = "7.8"
 project = "drupal"
 datestamp = "1314817616"
 
+scripts[] = scripts.js
