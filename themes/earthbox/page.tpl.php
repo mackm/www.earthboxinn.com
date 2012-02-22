@@ -66,8 +66,9 @@
  * @see template_process()
  */
 ?>
-
-  <div id="page-wrapper"><div id="page">
+  <?php /* Mack - 2/22/12 -Added page color class to wrapper div  */ ?>
+  
+  <div id="page-wrapper" class="<?php print($node->field_color['und'][0]['taxonomy_term']->name) ?>_page">
   <!--
   Colin killed this ...
   <h1>Hello World</h1>

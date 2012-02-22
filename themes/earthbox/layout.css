@@ -40,7 +40,6 @@ margin: 12px;
 margin-top: 25px;
 margin-left: 25px;
 margin-bottom: 0px;
-color: #A3A86B;	
 background-color: white;
 font-size: 26px;
 }
@@ -366,8 +365,7 @@ height: 280px;
 width: 709px;
 }
 
-
-#block-system-main { 
+/*#block-system-main { 
 xbackground-color: blue;
 font-size: 12px;
 padding: 1px;
@@ -375,7 +373,7 @@ margin: 0px;
 margin-top: 2px;
 margin-left: 24px;
 }
-
+*/
 
 ul .menu {
 	background-color: green;
@@ -495,10 +493,6 @@ width: 121px;
 .menu-block-1 ul.menu li.menu-mlid-505 a{
 width: 121x;	
 }
-
-
-
-
 
 
 #block-menu-block-2 .content .menu-block-2 ul.menu li.first a {
@@ -704,6 +698,187 @@ border-top: 0px none;
 	text-decoration:underline;
 }
 
+
+/* Body Color Handling */
+
+.field-name-field-color {
+	display:none;
+}
+
+
+/* GRASS */
+
+
+.grass_page a {
+	text-decoration:none;
+	color:#A3A86B;
+}
+
+.grass_page a:hover, a:focus{
+	text-decoration: underline;
+	color:#A3A86B;
+}
+
+.grass_page a:active {
+	text-decoration:none;
+	color:#A3A86B;
+}
+
+.grass_page h1 {
+	color: #A3A86B;
+}
+ 
+/* -- BLUE -- */
+
+
+.blue_page a {
+	text-decoration:none;
+	color:#99BFE5;
+}
+
+.blue_page a:hover, a:focus{
+	text-decoration: underline;
+	color:#99BFE5;
+}
+
+.blue_page a:active {
+	text-decoration:none;
+	color:#99BFE5;
+}
+
+.blue_page h1 {
+	color: #99BFE5;
+}
+ 
+/* LAVENDER */
+
+.lavender_page a {
+	text-decoration:none;
+	color:#A3A86B;
+}
+
+.lavender_page a:hover, a:focus{
+	text-decoration: underline;
+	color:#A3A86B;
+}
+
+.lavender_page a:active {
+	text-decoration:none;
+	color:#A3A86B;
+}
+
+.lavender_page h1 {
+	color: #A3A86B;
+}
+
+/* PAPAYA */
+
+
+.papaya_page a {
+	text-decoration:none;
+	color:#FFD65A;
+}
+
+.papaya_page a:hover, a:focus{
+	text-decoration: underline;
+	color:#FFD65A;
+}
+
+.papaya_page a:active {
+	text-decoration:none;
+	color:#FFD65A;
+}
+
+.papaya_page h1 {
+	color: #FFD65A;
+}
+
+/* SEAFOAM */
+
+.seafoam_page a {
+	text-decoration:none;
+	color:#99CCC3;
+}
+
+.seafoam_page a:hover, a:focus{
+	text-decoration: underline;
+	color:#99CCC3;
+}
+
+.seafoam_page a:active {
+	text-decoration:none;
+	color:#99CCC3;
+}
+
+.seafoam_page h1 {
+	color: #99CCC3;
+}
+
+/* ORANGE */
+
+.orange_page a {
+	text-decoration:none;
+	color:#C75B12;
+}
+
+.orange_page a:hover, a:focus{
+	text-decoration: underline;
+	color:#C75B12;
+}
+
+.orange_page a:active {
+	text-decoration:none;
+	color:#C75B12;
+}
+
+.orange_page h1 {
+	color: #C75B12;
+}
+
+
+
+/* Side Page Graphics */
+
+.field-name-field-graphic {
+	display:none;
+}
+
+#rh_bot_copy {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	float:left;
+	width:683px;
+	background-color:#fff;
+	padding: 25px 25px 30px 25px;
+}
+
+#copy_box {
+	float: left;
+	width:420px;
+	padding:0;
+	margin:0;
+}
+
+.sun_logo {
+	  padding-left:80px; 
+	  padding-top:35px; 
+}
+  
+.grass_logo {
+	 padding-left:75px; 
+	 padding-top:30px;
+}
+
+.spa_logo {
+	 padding-left:75px; 
+	 padding-top:50px;
+}
+ 
+.water_logo {
+	 padding-left:68px;
+	 padding-top:110px; 
+}
+ 
 
 
 
