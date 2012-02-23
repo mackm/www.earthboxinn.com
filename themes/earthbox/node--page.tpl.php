@@ -82,7 +82,13 @@
 <!-- Lower right page copy div.color_page controls per page color scheme -->
 <div id="rh_bot_copy">
 <!-- Left column within copy -->
-<div id="copy_box">
+<?php
+    /* Determine whether this is a full width page or should leave room for graphics on right */
+    if ((empty($node->field_wide['und'][0]['value'])) || (!$node->field_wide['und'][0]['value']))
+    {
+      print('<div id="copy_box">'); 
+    }
+?>
 
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
@@ -114,19 +120,22 @@
   <?php print render($content['comments']); ?>
 
 </div>
-</div><!-- /copy_box -->
+
         
-<!-- Graphics flow on the right hand side of the copy box beside the left floated copy -->
+<!-- Mack -- Graphics flow on the right hand side of the copy box beside the left floated copy -->
           
  <?php 
-   
-   foreach ($node->field_graphic['und'] as $in=>$val)
+ // If this is not a wide page, uptput any right-side graphics
+ // This depends on the class name and file name being synchronized with the associated taxonomy term
+   if ((empty($node->field_wide['und'][0]['value'])) || (!$node->field_wide['und'][0]['value']))
    {
-   	   print('<img class="'.$val['taxonomy_term']->name.
-   	         '_logo" src="'.file_create_url(file_build_uri('/themes/earthbox/EB_'.$val['taxonomy_term']->name)).'.jpg"/><br />');
-
+   	 print('</div>'); /* <!-- /copy_box --> */
+     foreach ($node->field_graphic['und'] as $in=>$val)
+     {
+   	     print('<img class="'.$val['taxonomy_term']->name.
+   	          '_logo" src="'.file_create_url(file_build_uri('/themes/earthbox/EB_'.$val['taxonomy_term']->name)).'.jpg"/><br />');
+     }
    }
- 
  ?>      
        
        
