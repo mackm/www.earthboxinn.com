@@ -68,18 +68,7 @@
 ?>
   <?php /* Mack - 2/22/12 -Added page color class to wrapper div  */ ?>
   
-  
-  <?php
-    $colorid = $node->field_color['und'][0]['tid'];
-	switch($colorid) {
-		case 5: $color = 'blue'; break;
-	    case 1: $color = 'grass'; break;
-		case 2: $color = 'orange';break;
-		case 3: $color = 'papaya'; break;
-		case 4: $color = 'papaya'; break;
-	}
-  print('<div id="page-wrapper" class="'.$color.'_page">');
-  ?>
+  <div id="page-wrapper" class="<?php print($node->field_color['und'][0]['taxonomy_term']->name) ?>_page">
   <!--
   Colin killed this ...
   <h1>Hello World</h1>
@@ -142,8 +131,8 @@
       <img style="position:relative; top:10px; left:-6px" src="http://localhost/sites/www.earthboxinn.com/files/themes/earthbox/eb logo r.jpg"> 
    -->
 
-      <?php print('<img src="'.file_create_url(file_build_uri('/images/ebi-left.jpg')).'">'); ?>
-      <?php print('<img style="position:relative; top:11px; left:-5px" src="'.file_create_url(file_build_uri('/images/ebi-right.jpg')).'">'); ?>
+      <?php print('<img src="'.file_create_url(file_build_uri('/themes/earthbox/eb logo l.jpg')).'">'); ?>
+      <?php print('<img style="position:relative; top:10px; left:-6px" src="'.file_create_url(file_build_uri('/themes/earthbox/eb logo r.jpg')).'">'); ?>
          
       </div>
         <!--
