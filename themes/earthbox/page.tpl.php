@@ -73,10 +73,10 @@
     if ((!empty($node)) && (!empty($node->field_color['und'][0]['tid']))) {
 			$colorid = $node->field_color['und'][0]['tid'];
 			switch($colorid) {
-				case 0: $color = 'blue'; break;
+				case 5: $color = 'blue'; break;
 				case 1: $color = 'grass'; break;
-				case 2: $color = 'lavender';break;
-				case 3: $color = 'orange'; break;
+				case 2: $color = 'orange';break;
+				case 3: $color = 'papaya'; break;
 				case 4: $color = 'papaya'; break;
 			}
 			print('<div id="page-wrapper" class="'.$color.'_page">');
