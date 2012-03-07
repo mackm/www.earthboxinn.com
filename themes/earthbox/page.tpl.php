@@ -70,8 +70,8 @@
   
   
   <?php
-    if ((!empty($node)) && (!empty($node->field_color['und'][0]['taxonomy_term']->tid))) {
-			$colorid = $node->field_color['und'][0]['taxonomy_term']->tid;
+    if ((!empty($node)) && (!empty($node->field_color['und'][0]['tid']))) {
+			$colorid = $node->field_color['und'][0]['tid'];
 			switch($colorid) {
 				case 0: $color = 'blue'; break;
 				case 1: $color = 'grass'; break;
