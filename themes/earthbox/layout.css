@@ -905,9 +905,51 @@ border-top: 0px none;
 	 padding-top:110px; 
 }
  
+.node-type-forum p {
+	font-size: 14px;
+    margin: 8px 0px 8px 20px;
+}
 
+.node-type-forum .submitted  ,.node-type-forum .field-item {
+  margin-left:40px;
+}
 
+.node-type-forum .field-label {
+	margin:10px 0 10px 30px;
+}
 
+.node-forum #page-title {
+	color:#A3A86B;
+	margin-bottom:20px;
+}
+
+.node-forum .comment-form {
+	margin-left:40px;
+}
+
+.node-forum h2.comment-form, .node-type-forum .comment-add {
+	font-size:12px;
+	color:#FFD65A;
+	margin-top:20px;
+}
+
+.node-type-forum .permalink {
+	display:none;
+}
+
+.node-forum ul {
+	font-size:12px;
+	margin-left:40px;
+}
+
+.node-forum ul li {
+	padding:0;
+	margin:0;
+}
+
+.node-forum .submitted {
+	font-size:12px;
+}
 /*
 
 
