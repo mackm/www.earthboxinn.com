@@ -934,6 +934,25 @@ border-top: 0px none;
 }
 
 .node-type-forum .permalink {
+	font-size:14px;
+	color:#A3A86B;
+	text-decoration:none;
+
+}
+.comment h3 {
+		margin-top:10px;
+		margin-bottom:5px;
+		margin-left:5px;
+		padding-left:10px;
+		width:200px;
+		border-top:1px dashed #A3A86B;
+}
+
+.comment ul.links.inline {
+	margin-left:60px;
+}
+
+.node-type-forum .submitted .permalink {
 	display:none;
 }
 
