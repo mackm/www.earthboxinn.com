@@ -278,7 +278,8 @@ float: left;
  }
 
 #navigation li {
-	display: block;
+	display: inline;
+	padding:0;
 }
 
 #sidebar-first {
