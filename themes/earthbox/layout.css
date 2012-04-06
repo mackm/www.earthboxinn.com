@@ -273,13 +273,12 @@ float: left;
 	padding 0px;
 	float:left;
 	width:969px;
-/*	list-style-type:none; */
+	list-style-type:none;
 	xbackground-color: red;
  }
 
 #navigation li {
-/*	display: block; */
-	display:inline;
+	display: block;
 }
 
 #sidebar-first {
@@ -317,7 +316,7 @@ margin: 0px;
 
 
 ul.inline, ul.links.inline {
-/*    display: inline; */
+    display: inline;
     padding-left: 0;
     padding-right: 0;
 }
@@ -392,6 +391,16 @@ height: 280px;
 width: 709px;
 }
 
+/*#block-system-main { 
+xbackground-color: blue;
+font-size: 12px;
+padding: 1px;
+margin: 0px;
+margin-top: 2px;
+margin-left: 24px;
+}
+*/
+
 ul .menu {
 	background-color: green;
 	text-align: right;	
@@ -442,7 +451,7 @@ border-left-style: solid;
 .menu-block-1 ul.menu li{
   margin:0;
   padding:0px;
-/*  list-style:none; */
+  list-style:none;
   float: left;
   margin: 0;
   padding: 0 0 0 0px;
@@ -478,6 +487,8 @@ footFerries{}
 .menu-block-1 ul.menu li.menu-mlid-498 a{
 width: 109px;
 }
+
+
 
 .theSpa .overView {}
 .menu-block-1 ul.menu li.menu-mlid-525 a{
@@ -966,3 +977,38 @@ border-top: 0px none;
   color:#F82200
 }
 
+/*
+
+
+
+#navigation a:hover, a:active, a:focus {
+	text-decoration:none;	
+}
+
+
+#main-menu li a:hover{
+xcolor: #C75B12;
+	}
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-364 {
+color: red;	
+}
+
+
+ */
