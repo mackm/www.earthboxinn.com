@@ -121,8 +121,6 @@
 
 </div>
 
-        
-<!-- Mack -- Graphics flow on the right hand side of the copy box beside the left floated copy -->
           
  <?php 
  // If this is not a wide page, uptput any right-side graphics
