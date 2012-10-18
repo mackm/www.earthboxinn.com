@@ -9,7 +9,7 @@ function earthbox_preprocess_html(&$variables){
   
 }
 
-function phptemplate_imagecache($presetname, $path, $alt = '', $title = '', $attributes = NULL, $getsize = TRUE) {
+function earthbox_imagecache($presetname, $path, $alt = '', $title = '', $attributes = NULL, $getsize = TRUE) {
   // Check is_null() so people can intentionally pass an empty array of
   // to override the defaults completely.
   if (is_null($attributes)) {
