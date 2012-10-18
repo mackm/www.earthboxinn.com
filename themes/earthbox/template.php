@@ -8,5 +8,20 @@ function earthbox_preprocess_html(&$variables){
  */
   
 }
-  
-?>
+
+function phptemplate_imagecache($presetname, $path, $alt = '', $title = '', $attributes = NULL, $getsize = TRUE) {
+  // Check is_null() so people can intentionally pass an empty array of
+  // to override the defaults completely.
+  if (is_null($attributes)) {
+    $attributes = array('class' => 'imagecache imagecache-'. $presetname);
+  }
+  if ($getsize && ($image = image_get_info(imagecache_create_path($presetname, $path)))) {
+    $attributes['width'] = $image['width'];
+    $attributes['height'] = $image['height'];
+  }
+
+  $attributes = drupal_attributes($attributes);
+  // here we add drupal_urlencode to make sure the path is encoded.
+  $imagecache_url = imagecache_create_url($presetname, drupal_urlencode($path));
+  return '<img class="mceItem" title="'. check_plain($title) .'" src="'.$imagecache_url.'" alt="'. check_plain($alt) .'">';
+}

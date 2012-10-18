@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 files/css
 files/ctools
 files/styles
@@ -9,3 +10,16 @@ files/js
 files/xmlsitemap
 
 
+=======
+files/css
+files/ctools
+files/styles
+files/css
+files/ctools
+files/styles
+files/tmp
+files/js
+files/xmlsitemap
+
+
+>>>>>>> 083fe83dc281163073c997fd3d38c241c98ba2ca
