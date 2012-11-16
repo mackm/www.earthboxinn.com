@@ -1016,7 +1016,8 @@ border-top: 0px none;
 #block-webresavail-availability-query {
 	font-size:12px;
 	float:left;
-	width:165px;
+	width:157px;
+	padding-left:6px;
 	margin-left:10px;
 	margin-top:45px;
 	border:1px solid black;
@@ -1058,6 +1059,7 @@ border-top: 0px none;
 #block-webresavail-availability-query #edit-description.form-item label {
 	text-align:center;
 	margin:auto;
+	display:none;  /* Killed the label  */
 }
 
 #block-webresavail-availability-query .form-item .form-item {
@@ -1128,15 +1130,24 @@ border-top: 0px none;
 	margin:15px 0 20px 30px;
 	font-weight:bold;
 	line-height:1;
-	padding:4px 10px;
+	padding:4px 7.5px;
 	color:#444;
-	border:none;
+/*	border:none; */
 	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb)));
-	background-image: -moz-linear-gradient(0% 100% 90deg, #fff, #bbb);
+	background-image: -moz-linear-gradient(0% 100% 90deg, #fff, #bbb); 
 	background-color:#fff;
-	-webkit-border-radius:23px;
+/*	-webkit-border-radius:23px;
 	-mox-border-radius: 23px;
 	-o-border-radius: 23px;
-	border-radius: 23px;
+	border-radius: 23px; */
+}
+
+#block-webresavail-availability-query .container-inline-date .form-item {
+	border:none;
+	margin-left:8px;
+}
+
+#block-webresavail-availability-query .container-inline-date .form-item label {
+	margin-left:8px;
 }
