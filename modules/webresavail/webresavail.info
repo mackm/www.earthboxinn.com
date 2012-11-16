@@ -1,0 +1,6 @@
+name = webresavail
+description = Form handler for availability search
+package = swiftsure
+version = VERSION
+core = 7.x
+files[] = webresavail.module

@@ -1,0 +1,132 @@
+<?php
+
+//
+// Sets the search date fields of the availability search for to the current date range if
+// we are currently showing availability results.
+//
+
+//
+// Define the availability query form block to Drupal
+//
+function webresavail_block_info() {
+  $blocks['availability_query'] = array(
+    'info' => t('Rates + Availability'),
+    'status' => TRUE,
+    'cache' => DRUPAL_NO_CACHE,
+    'region' => 'sidebar_first',
+  );
+  return $blocks;
+}
+
+function webresavail_availability_form($formstate){
+
+  $form['description'] = array(
+    '#type' => 'item', 
+    '#title' => t('Rates <span style="text-style:bold">&middot;</span> Availability'),
+  );
+  $form['#submit'][] = 'webresavail_availability_form_submit';
+  $form['#validate'][] = 'webresavail_availability_form_validate';
+  
+  $format = 'Y-m-d';
+  
+  $form['date_from'] = array(
+    '#title' => t('Arrival'),
+    '#type' => 'date_popup',
+    '#date_format' => $format,
+    '#date_label_position' =>'within',
+    '#date_year_range' => '0:+1',
+    '#required' => true,
+    '#size' => 10,
+    '#default_value' => date($format, time()),
+   );
+  
+  $form['nights'] = array(
+    '#type' => 'select',
+    '#title' => t('Nights'),
+    '#options' => array(1=>1,2=>2,3=>3,4=>4,5=>5,6=>6,7=>7,8=>8,9=>9,10=>10,
+  						11=>11,12=>12,13=>13,14=>14,15=>15,16=>16,17=>17,18=>18,19=>19,
+                        20=>20,21=>21,22=>22,23=>23,24=>24,25=>25,26=>26,27=>27,28=>28,29=>29,30=>30),
+     '#default_value' => 1,
+   );
+     $form['num_adults'] = array(
+    '#type' => 'select',
+    '#title' => t('Adults'),
+    '#options' => array(1=>1,2=>2,3=>3,4=>4,5=>5,6=>6),
+     '#default_value' => 2,
+   );
+     $form['num_children'] = array(
+    '#type' => 'select',
+    '#title' => t('Kids'),
+    '#options' => array(0=>0,1=>1,2=>2,3=>3,4=>4),
+    '#default_value' => 0,
+   );
+    $form['code'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Promo code'),
+    '#size' => 10,
+    '#maxlength' =>10,
+   );
+  $form['submit'] = array(
+    '#type' => 'submit', 
+    '#value' => 'Find a Room',
+  );
+  
+  return ($form);
+}
+
+
+//
+// Validates the dates set on the availability form and give the user and error message
+// if a valid date range is not specified
+//
+function webresavail_availability_form_validate($form, &$form_state) {
+     //drupal_set_message('In Form Validate');
+   
+     $date_from = strtotime($form['date_from']['#value']['date']);
+     
+     $notBefore =  strtotime(date('Y-m-d').' 00:00:00');
+
+     if ($date_from < $notBefore)
+       form_set_error('date_from','Check-in date may not be before today');
+}
+
+//
+// Redirects to the availability page using the already validated input values
+//
+function webresavail_availability_form_submit($form, &$form_state) {
+
+    
+     drupal_goto('http://reservation.worldweb.com/Bookings-nr105/activity-edit.html', 
+     			array('query' => array(
+     			    'command'		=> 'roomsearch',
+     			    'access_code' 	=> $form['code']['#value'], 
+					'area_id'		=> '',
+					'date_from'     => $form['date_from']['#value']['date'],
+					'hotel_id'		=> '584',
+					'language'		=> 'english',
+					'listing_id'    => '584',
+					'location_id'	=> '',
+					'mode'			=> 'command',
+					'mode'			=> 'command',
+					'num_adults'    => $form['num_adults']['#value'],
+					'num_children'	=> $form['num_children']['#value'],
+					'num_nights'	=> $form['nights']['#value'],
+					'reservationcode_id' => '',
+					'table'			=> 'hotels',))); 
+}
+
+//
+// Return the availabilty form to populate the block
+//
+function webresavail_block_view($delta='')
+{
+  switch($delta) {
+    case 'availability_query':
+      $block['subject'] = null; // Most forms don't have a subject 
+      $block['content'] = drupal_get_form('webresavail_availability_form');
+      break;
+   }
+  
+   return $block;
+ }
+ 
