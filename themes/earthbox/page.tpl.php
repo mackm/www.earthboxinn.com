@@ -141,14 +141,11 @@
       Added 
       --> 
         <div id="logo"> 
-   <!--     
-      <img src="http://localhost/sites/www.earthboxinn.com/files/themes/earthbox/eb logo l.jpg"> 
-      <img style="position:relative; top:10px; left:-6px" src="http://localhost/sites/www.earthboxinn.com/files/themes/earthbox/eb logo r.jpg"> 
-   -->
 
+      <a href="/">
       <?php print('<img src="'.file_create_url(file_build_uri('/images/ebi-left.jpg')).'">'); ?>
       <?php print('<img style="position:relative; top:11px; left:-5px" src="'.file_create_url(file_build_uri('/images/ebi-right.jpg')).'">'); ?>
-         
+      </a>
       </div>
         <!--
         end logo code

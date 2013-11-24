@@ -122,8 +122,6 @@ border-bottom-width: 12px;
 
 #sidebar-first {
 	float: left;	
-	xdisplay: inline;
-  	xposition: relative;
 	width: 185px;
 	border-right-style: solid;
 	border-right-color: #BDB1A6;
@@ -493,32 +491,32 @@ width: 109px;
 
 .theSpa .overView {}
 .menu-block-1 ul.menu li.menu-mlid-525 a{
-width: 121px;	
+width: 143px;	
 }
 
 .massage{}
 .menu-block-1 ul.menu li.menu-mlid-501 a{
-width: 124px;	
+width: 142px;	
 }
 
 .body{}
 .menu-block-1 ul.menu li.menu-mlid-502 a{
-width: 121px;	
+width: 142px;	
 }
 
 .face{}
 .menu-block-1 ul.menu li.menu-mlid-503 a{
-width: 121px;	
+width: 142px;	
 }
 
 .nails{}
 .menu-block-1 ul.menu li.menu-mlid-504 a{
-width: 121px;	
+width: 142px;	
 }
 
 .more{}
 .menu-block-1 ul.menu li.menu-mlid-505 a{
-width: 121x;	
+width: 142px;	
 }
 
 
@@ -892,7 +890,7 @@ border-top: 0px none;
 }
   
 .grass_logo {
-	 padding-left:75px; 
+	 padding-left:112px; 
 	 padding-top:30px;
 }
 
@@ -1132,15 +1130,10 @@ border-top: 0px none;
 	line-height:1;
 	padding:4px 7.5px;
 	color:#444;
-/*	border:none; */
 	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb)));
 	background-image: -moz-linear-gradient(0% 100% 90deg, #fff, #bbb); 
 	background-color:#fff;
-/*	-webkit-border-radius:23px;
-	-mox-border-radius: 23px;
-	-o-border-radius: 23px;
-	border-radius: 23px; */
 }
 
 #block-webresavail-availability-query .container-inline-date .form-item {
@@ -1150,4 +1143,23 @@ border-top: 0px none;
 
 #block-webresavail-availability-query .container-inline-date .form-item label {
 	margin-left:8px;
+}
+
+#br-link {
+	margin-bottom:10px;
+	float:left;
+	width:100%;
+}
+
+#br-link p {
+	margin:10px 0 10px 10px;
+	padding:0;
+	font-size:12px;
+}
+
+#ta-award {
+	float:left;
+	margin-left:15px;
+	margin-top:20px;
+	margin-bottom:10px;
 }
