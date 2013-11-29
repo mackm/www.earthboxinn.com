@@ -1,0 +1,8 @@
+filename = "EarthboxFridayHarborInnampSpa-2013-11-29T11-43-40"
+description = ""
+datestamp = "1385754221"
+generator = "Backup and Migrate (http://drupal.org/project/backup_migrate)"
+generatorversion = "7.x-2.x"
+sites[0][version] = "7.16"
+sites[0][name] = "Earthbox Friday Harbor Inn & Spa"
+sites[0][url] = "http://127.0.0.1:10088/"

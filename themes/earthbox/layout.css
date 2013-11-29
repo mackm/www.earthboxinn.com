@@ -1,4 +1,5 @@
-
+/* Stylesheet for the Earthbox Inn Website */
+/* Copyright 2012 Swiftsure Marketing Inc. */
 
 
 ul, ol, dl {
@@ -135,7 +136,8 @@ border-bottom-width: 12px;
 }
 
 .region-content{
-float: left;
+  float: left;
+  width:733px;
 }
 
 #block-menu-block-3 .content .menu-block-3
@@ -374,31 +376,18 @@ color: #A3A86B;
 #navigation .section li.menu-366 a.active-trail {
 color: #99BFE5;	
 }
+
 #navigation .section li.menu-366 a:hover {
 color: #99BFE5;	
 }
 
-#main-wrapper #main #content{
-xbackground-color:green;	
-}
-
-.view-content {
+.view-top-photos .view-content {
 background-color: white;
 padding: 12px;
 padding-bottom: 9px;
 height: 280px;
 width: 709px;
 }
-
-/*#block-system-main { 
-xbackground-color: blue;
-font-size: 12px;
-padding: 1px;
-margin: 0px;
-margin-top: 2px;
-margin-left: 24px;
-}
-*/
 
 ul .menu {
 	background-color: green;
@@ -409,7 +398,6 @@ ul .menu {
 background-color: yellow;
 text-align: right;	
 }
-
 
 ul li.leaf {
 list-style: none;
@@ -877,6 +865,10 @@ border-top: 0px none;
 	padding: 25px 25px 30px 25px;
 }
 
+.page-node-50 #rh_bot_copy {
+	display:none;
+}
+
 #copy_box {
 	float: left;
 	width:420px;
@@ -1163,3 +1155,58 @@ border-top: 0px none;
 	margin-top:20px;
 	margin-bottom:10px;
 }
+
+/* Staff Bios Page */
+
+.view-staff-bios {
+	float:left;
+	padding:20px 30px;
+	width:673px;
+}
+
+.view-staff-bios .view-content {
+	float:left;
+	width:673;
+}
+
+.view-staff-bios .views-row,
+.view-staff-bios .views-row .field {
+	float:left;
+	width:673px;
+}
+.view-staff-bios .views-row {
+	margin-bottom:10px;
+}
+
+.view-staff-bios .views-row .field-name-field-employee-picture {
+	float:left;
+	width:160px;
+	padding:0 20px 0 0;
+}
+
+.view-staff-bios .views-row .field-name-body {
+	float:left;
+	width:473px;
+	padding:10px;
+	padding-top:10px;
+}
+
+.view-staff-bios h2 a {
+	color:#603913;
+}
+
+.view-staff-bios h2 {
+	font-size:16px;
+	float:left;
+	width:100%;
+	padding:4px 0;
+	border-top:1px solid #BDB1A6;
+	border-bottom:1px solid #BDB1A6;
+}
+
+/* Try to find containment problem */
+
+
+
+
+
