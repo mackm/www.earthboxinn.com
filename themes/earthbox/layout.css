@@ -381,7 +381,11 @@ color: #99BFE5;
 color: #99BFE5;	
 }
 
+<<<<<<< HEAD
 .view-top-photos .view-content {
+=======
+.view-content {
+>>>>>>> 2145719fd657e0bfcd2a131547008c4918e81faa
 background-color: white;
 padding: 12px;
 padding-bottom: 9px;
@@ -1158,6 +1162,7 @@ border-top: 0px none;
 
 /* Staff Bios Page */
 
+<<<<<<< HEAD
 .view-staff-bios {
 	float:left;
 	padding:20px 30px;
@@ -1167,15 +1172,36 @@ border-top: 0px none;
 .view-staff-bios .view-content {
 	float:left;
 	width:673;
+=======
+#block-views-staff-bios-block,
+#block-views-staff-bios-block .content {
+	float:left;
+	width:100%;
+	background-color:white;
+}
+
+.view-staff-bios,
+.view-staff-bios .view-content {
+	float:left;
+	padding: 0 20px;
+	width:669px;
+>>>>>>> 2145719fd657e0bfcd2a131547008c4918e81faa
 }
 
 .view-staff-bios .views-row,
 .view-staff-bios .views-row .field {
 	float:left;
+<<<<<<< HEAD
 	width:673px;
 }
 .view-staff-bios .views-row {
 	margin-bottom:10px;
+=======
+	width:669px;
+}
+.view-staff-bios .views-row {
+	margin-top:10px;
+>>>>>>> 2145719fd657e0bfcd2a131547008c4918e81faa
 }
 
 .view-staff-bios .views-row .field-name-field-employee-picture {
@@ -1186,9 +1212,13 @@ border-top: 0px none;
 
 .view-staff-bios .views-row .field-name-body {
 	float:left;
+<<<<<<< HEAD
 	width:473px;
 	padding:10px;
 	padding-top:10px;
+=======
+	width:489px;
+>>>>>>> 2145719fd657e0bfcd2a131547008c4918e81faa
 }
 
 .view-staff-bios h2 a {
@@ -1204,9 +1234,12 @@ border-top: 0px none;
 	border-bottom:1px solid #BDB1A6;
 }
 
+<<<<<<< HEAD
 /* Try to find containment problem */
 
 
+=======
+>>>>>>> 2145719fd657e0bfcd2a131547008c4918e81faa
 
 
 
