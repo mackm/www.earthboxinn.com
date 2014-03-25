@@ -508,7 +508,7 @@ width: 118px;
 }
 
 .staff{}
-.menu-block-1 ul.menu li.menu-mlid-736 a{
+.menu-block-1 ul.menu li.menu-mlid-737 a{
 width: 117px;	
 }
 
@@ -545,7 +545,6 @@ border-left-style: solid;
 .menu-block-2 ul.menu li a{
   float: left;
   display: block;
-  xwidth: 99px;
   width: 99px;
   text-align: center;
   padding: 5px 1px 4px 1px;
@@ -631,13 +630,23 @@ width: 109px;
 }
 
 
-.menu-block-2 ul.menu li a:hover{
-color: white;	
+/* Our Inn Items */
+.menu-block-2 ul.menu li.menu-mlid-372 a,
+.menu-block-2 ul.menu li.menu-mlid-511 a,
+.menu-block-2 ul.menu li.menu-mlid-512 a,
+.menu-block-2 ul.menu li.menu-mlid-510 a,
+.menu-block-2 ul.menu li.menu-mlid-514 a {
+  width:118px;
 }
 
-.menu-block-2 ul.menu li.menu-mlid-515 a
-{
-width: 109px;	
+.menu-block-2 ul.menu li.menu-mlid-515 a {
+	width:117px;
+}
+
+
+
+.menu-block-2 ul.menu li a:hover{
+color: white;	
 }
 
 
@@ -1014,8 +1023,12 @@ border-top: 0px none;
 	width:157px;
 	padding-left:6px;
 	margin-left:10px;
-	margin-top:45px;
+	margin-top:40px;
 	border:1px solid black;
+}
+
+.front #block-webresavail-availability-query {
+  margin-top:60px;
 }
 
 #block-webresavail-availability-query .form-item {
