@@ -1225,6 +1225,11 @@ border-top: 0px none;
 
 /* Try to find containment problem */
 
+#footer {
+	float:left;
+	width:100%;
+}
+
 
 
 
