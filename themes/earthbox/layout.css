@@ -1264,6 +1264,8 @@ border-top: 0px none;
 	clear:left;
 }
 
+#webform-component-number-of-guest-rooms label {margin-right:1em;}
+
 #webform-component-shuttle-needed .form-radios label,
 #webform-component-luggage-handling-needed .form-radios label,
 #webform-component-dates-flexible .form-radios label {
