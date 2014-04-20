@@ -1232,6 +1232,9 @@ border-top: 0px none;
 
 /* Group Request Form */
 
+.node-type-webform .submitted {
+	display:none;
+}
 
 .webform-client-form .form-item {
 	clear:left;
