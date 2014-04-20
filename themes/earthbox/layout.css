@@ -1223,14 +1223,75 @@ border-top: 0px none;
 	border-bottom:1px solid #BDB1A6;
 }
 
-/* Try to find containment problem */
-
 #footer {
 	float:left;
 	width:100%;
 }
 
 
+
+/* Group Request Form */
+
+
+.webform-client-form .form-item {
+	clear:left;
+}
+
+#webform-component-name label,
+#webform-component-title label,
+#webform-component-organization label,
+#webform-component-street label,
+#webform-component-city label,
+#webform-component-state label,
+#webform-component-zip-postal-code label,
+#webform-component-country label,
+#webform-component-phone label,
+#webform-component-number-of-attendees label,
+#webform-component-number-of-guest-rooms label,
+#webform-component-further-accommodation-requests label,
+#webform-component-arrival-date label,
+#webform-component-departure-date label,
+#webform-component-dates-flexible label,
+#webform-component-shuttle-needed label,
+#webform-component-luggage-handling-needed label,
+#webform-component-preferred-room-set-up label,
+#webform-component-audio-visual-requirements label,
+#webform-component-group-type label,
+#webform-component-email label {
+	float:left;
+	width:250px;
+	text-align:right;
+	clear:left;
+}
+
+#webform-component-shuttle-needed .form-radios label,
+#webform-component-luggage-handling-needed .form-radios label,
+#webform-component-dates-flexible .form-radios label {
+	width:auto;
+	text-align:left;
+	float:none;
+}
+
+
+#webform-component-pref-communication ,
+#webform-component-food--beverage-requirements,
+#webform-component-spa,
+#webform-component-adventures,
+#webform-component-meeting-room-requirements,
+#webform-component-additional-comments,
+#webform-component-how-did-you-hear-about-us {
+    float:left;
+	margin-left:100px;
+	clear:both;
+
+}
+
+.webform-client-form #edit-actions {
+	float:left;
+	clear:both;
+	margin-left:40%;
+	margin-bottom:40px;
+}
 
 
 
