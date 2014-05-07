@@ -101,11 +101,11 @@ function webresavail_availability_form_submit($form, &$form_state) {
 
 	
 	if (isset($form['analytics']['#value']) && (strlen($form['analytics']['#value']) > 5))
-		$qParams = '?'.$form['analytics']['#value'];
+		$gaCookie = substr($form['analytics']['#value'],4);
 	else 
-		$qParams = '';
+		$gaCookie = '';
      
-     drupal_goto('http://reservation.worldweb.com/Bookings-nr105/activity-edit.html'.$qParams, 
+     drupal_goto('http://reservation.worldweb.com/Bookings-nr105/activity-edit.html', 
      			array('query' => array(
      			    'command'		=> 'roomsearch',
      			    'access_code' 	=> $form['code']['#value'], 
@@ -121,7 +121,8 @@ function webresavail_availability_form_submit($form, &$form_state) {
 					'num_children'	=> $form['num_children']['#value'],
 					'num_nights'	=> $form['nights']['#value'],
 					'reservationcode_id' => '',
-					'table'			=> 'hotels',))); 
+					'table'			=> 'hotels',
+     			    '_ga'			=> $gaCookie,))); 
 }
 
 //
