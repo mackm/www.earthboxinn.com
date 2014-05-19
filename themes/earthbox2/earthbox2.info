@@ -1,0 +1,16 @@
+name = Earthbox Responsive
+description = Earthbox Theme
+core = 7.x
+stylesheets[all][] = earthbox2-reset.css
+stylesheets[all][] = earthbox2-layout.css
+
+
+scripts[] = scripts.js
+scripts[] = menu.js
+
+regions[header] = Header
+regions[photo] = Photo
+regions[sidebar_first] = Left Sidebar
+regions[highlighted] = Highlighted
+regions[content] = Content
+regions[footer] = Footer
