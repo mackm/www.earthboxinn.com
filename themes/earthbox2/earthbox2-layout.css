@@ -1,5 +1,469 @@
 /* Stylesheet for the Earthbox Inn Website */
-/* Copyright 2012 Swiftsure Marketing Inc. */
+/* Copyright 2014 Swiftsure Marketing Inc. */
+
+
+/* ************************* */
+/* RESPONSIVE EARTHBOX THEME */
+/* ************************* */
+
+/* Include padding within the width, instead of in-addition */ 
+ * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Set up the site for small devices like phones in portrait mode */
+/* Designed to look good between 300px and 400px									*/
+
+html {
+  width:100%;
+  margin:0 auto;
+  text-align:center;
+	min-width:300px;
+}
+
+body {
+ font-family:Verdana, Geneva, sans-serif;
+ background: #BDB1A6;
+ margin:0 auto;
+ padding:0
+ text-align:center;
+ width:100%;
+ font-size:14px;
+ max-width:960px;
+ float:left;
+}
+
+#page-wrapper {
+	margin:0 auto;
+	position:relative;
+	width:100%;
+	text-align:left;
+	padding-left:20px;
+	padding-right:20px;
+	min-width:290px;
+}
+
+#header,
+.region-header {
+	float:left;
+	width:100%;
+	position:relative;
+	background-color:white;
+	height:80px;
+}
+
+#header #logo-top {
+	float:left;
+	max-width:50%;
+}
+
+#header #logo-top img {
+	float:left;
+	width:100%;
+	margin-top:5%;
+}
+
+#photo {
+	float:left;
+	width:100%;
+	position:relative;
+}
+
+#photo-transparency {
+	float:left;
+	width:100%;
+	min-width:300px;
+}
+.region-photo {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+}
+
+#main-wrapper {
+	float:left;
+	width:100%;
+	background-color:white;
+}
+
+.views-slideshow-cycle-main-frame-row,
+.views-slideshow-cycle-main-frame,
+.region-photo img {
+	float:left;
+	width:100%!important;
+	height:auto!important;
+	max-width:710px;
+}
+	
+#block-menu-menu-front-page-left {
+	display:none;
+}
+
+
+
+#navigation {
+	  display:none;
+}
+
+#drop-down-menu {
+	float:left;
+	width:100%;
+	background-color:white;
+	margin-top:10px;
+}
+
+#drop-down-menu ul {
+	float:left;
+	width:100%;
+	padding: 0 20px 8px 20px;
+}
+
+#drop-down-menu ul li ul {
+	display:none;
+}
+
+#drop-down-menu ul li {
+	float:left;
+	width:100%;
+	background-color:#603913;
+	margin:8px 0 0 0;
+	padding:8px 0;
+	text-align:center;
+	list-style:none;
+	display:list-item;
+}
+
+#drop-down-menu ul li a {
+	color:white;
+	text-transform:uppercase;
+	text-decoration:none;
+}
+
+#header .toggler-collapsed {
+    background-image: url(images/expand-menu.gif);
+    background-position: right 3px;
+    background-repeat: no-repeat;
+}
+
+#header .toggler {
+    float: right;
+    margin-bottom: 5px;
+    padding-bottom: 16px;
+    padding-right: 20px;
+    position: absolute;
+    right: 2em;
+    text-decoration: none;
+    top: 10px;
+    z-index: 15;
+}
+
+/* COPY */
+
+#page-title
+{
+  float: left;	
+	width:100%;
+  display:block;	
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+  padding: 10px 0 0 25px;
+  margin: 12px;
+  margin: 0px;
+  background-color: white;
+  font-size: 26px;
+}
+
+#rh_bot_copy {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	float:left;
+	width:100%;
+	background-color:#fff;
+	padding: 20px 25px 30px 25px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	font-variant: normal;
+	font-style:normal;
+	font-weight:normal;
+	margin: 0 0 15px 0;
+	padding:0;
+}
+
+
+#rh_bot_copy img {
+	display:none;
+}
+
+#rh_bot_copy #copy_box img {
+	display:block;
+}
+
+.field-name-field-graphic {
+	display:none;
+}
+
+#logo {
+	display:none;
+}
+
+#block-menu-block-2 {
+	display:none;
+}
+
+#block-menu-block-3 {
+	display:none;
+}
+
+#webresavail-availability-form {
+	display:none;
+}
+
+#ta-award {
+	display:none;
+}
+
+
+
+/* FOOTER */
+
+#footer {
+	float:left;
+	width:100%;
+	padding:0 5px;
+}
+
+#footer #address {
+    float:left;
+    margin-top: 10px;
+    color: #603913;
+		width:100%;
+}
+
+#footer #address #soc-phone {
+	float:left;
+	width:50%;
+}
+
+#footer #address #street {
+	float:left;
+	width:50%;
+	text-align:right;
+}
+
+#footer #copyright {
+	float:left;
+	width:100%;
+	text-align:center;
+}
+
+/* Body Color Handling */
+
+.field-name-field-color {
+	display:none;
+}
+
+
+/* GRASS */
+
+
+.grass_page a {
+	text-decoration:none;
+	color:#A3A86B;
+}
+
+.grass_page a:hover, a:focus{
+	text-decoration: underline;
+	color:#A3A86B;
+}
+
+.grass_page a:active {
+	text-decoration:none;
+	color:#A3A86B;
+}
+
+.grass_page h1 {
+	color: #A3A86B;
+}
+ 
+/* -- BLUE -- */
+
+
+.blue_page a {
+	text-decoration:none;
+	color:#99BFE5;
+}
+
+.blue_page a:hover, a:focus{
+	text-decoration: underline;
+	color:#99BFE5;
+}
+
+.blue_page a:active {
+	text-decoration:none;
+	color:#99BFE5;
+}
+
+.blue_page h1 {
+	color: #99BFE5;
+}
+ 
+/* LAVENDER */
+
+.lavender_page a {
+	text-decoration:none;
+	color:#A3A86B;
+}
+
+.lavender_page a:hover, a:focus{
+	text-decoration: underline;
+	color:#A3A86B;
+}
+
+.lavender_page a:active {
+	text-decoration:none;
+	color:#A3A86B;
+}
+
+.lavender_page h1 {
+	color: #A3A86B;
+}
+
+/* PAPAYA */
+
+
+.papaya_page a {
+	text-decoration:none;
+	color:#FFD65A;
+}
+
+.papaya_page a:hover, a:focus{
+	text-decoration: underline;
+	color:#FFD65A;
+}
+
+.papaya_page a:active {
+	text-decoration:none;
+	color:#FFD65A;
+}
+
+.papaya_page h1 {
+	color: #FFD65A;
+}
+
+/* SEAFOAM */
+
+.seafoam_page a {
+	text-decoration:none;
+	color:#99CCC3;
+}
+
+.seafoam_page a:hover, a:focus{
+	text-decoration: underline;
+	color:#99CCC3;
+}
+
+.seafoam_page a:active {
+	text-decoration:none;
+	color:#99CCC3;
+}
+
+.seafoam_page h1 {
+	color: #99CCC3;
+}
+
+/* ORANGE */
+
+.orange_page a {
+	text-decoration:none;
+	color:#C75B12;
+}
+
+.orange_page a:hover, a:focus{
+	text-decoration: underline;
+	color:#C75B12;
+}
+
+.orange_page a:active {
+	text-decoration:none;
+	color:#C75B12;
+}
+
+.orange_page h1 {
+	color: #C75B12;
+}
+
+
+
+@media screen and (min-width:700px) {
+	
+	
+	/* New fixup - TO DELETE */
+#rh_bot_copy {
+	padding-top: 25px;
+}
+
+
+
+#block-menu-menu-front-page-left {
+	display:block;
+}
+
+#page-title
+{
+  margin-top: 25px;
+}
+
+#drop-down-menu {
+	display:none;
+}
+
+#navigation {
+	  display:block;
+}
+
+#footer #address #soc-phone {
+	width:100%;
+}
+
+#footer #address #street {
+	width:100%;
+}
+
+#rh_bot_copy img {
+	display:block;
+}
+
+#logo {
+	display:block;
+}
+
+#block-menu-block-2 {
+	display:block;
+}
+
+#block-menu-block-3 {
+	display:block;
+}
+
+#webresavail-availability-form {
+	display:block;
+}
+
+#ta-award {
+	display:block;
+}
+
+/* End new fixup */
+
+
+/* Reformat location of these */
+.toggler {
+	display:none;
+}
+
+
+
 
 
 ul, ol, dl {
@@ -545,6 +1009,7 @@ border-left-style: solid;
 .menu-block-2 ul.menu li a{
   float: left;
   display: block;
+  xwidth: 99px;
   width: 99px;
   text-align: center;
   padding: 5px 1px 4px 1px;
@@ -630,23 +1095,13 @@ width: 109px;
 }
 
 
-/* Our Inn Items */
-.menu-block-2 ul.menu li.menu-mlid-372 a,
-.menu-block-2 ul.menu li.menu-mlid-511 a,
-.menu-block-2 ul.menu li.menu-mlid-512 a,
-.menu-block-2 ul.menu li.menu-mlid-510 a,
-.menu-block-2 ul.menu li.menu-mlid-514 a {
-  width:118px;
-}
-
-.menu-block-2 ul.menu li.menu-mlid-515 a {
-	width:117px;
-}
-
-
-
 .menu-block-2 ul.menu li a:hover{
 color: white;	
+}
+
+.menu-block-2 ul.menu li.menu-mlid-515 a
+{
+width: 109px;	
 }
 
 
@@ -666,19 +1121,18 @@ border-top: 0px none;
 	
 }
 
+#footer {
+	padding:0;
+}
 
- #address {
-    float:left;
+#footer #address {
     width:175px;
     text-align:right;
     padding:0 10px 0 0; 
-    xmargin: 10px 10px 0 0;
     margin-left: 30px;
-    margin-top: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
     font-size:12px;
-    color: #603913;
 }
 
 .bg_font {
@@ -703,7 +1157,7 @@ border-top: 0px none;
 	color: #603913;
 }
 
-#copyright {
+#footer #copyright {
 	float:left;
 	width: 580px;
 	text-align: center;
@@ -726,157 +1180,14 @@ border-top: 0px none;
 }
 
 
-/* Body Color Handling */
 
-.field-name-field-color {
-	display:none;
-}
-
-
-/* GRASS */
-
-
-.grass_page a {
-	text-decoration:none;
-	color:#A3A86B;
-}
-
-.grass_page a:hover, a:focus{
-	text-decoration: underline;
-	color:#A3A86B;
-}
-
-.grass_page a:active {
-	text-decoration:none;
-	color:#A3A86B;
-}
-
-.grass_page h1 {
-	color: #A3A86B;
-}
- 
-/* -- BLUE -- */
-
-
-.blue_page a {
-	text-decoration:none;
-	color:#99BFE5;
-}
-
-.blue_page a:hover, a:focus{
-	text-decoration: underline;
-	color:#99BFE5;
-}
-
-.blue_page a:active {
-	text-decoration:none;
-	color:#99BFE5;
-}
-
-.blue_page h1 {
-	color: #99BFE5;
-}
- 
-/* LAVENDER */
-
-.lavender_page a {
-	text-decoration:none;
-	color:#A3A86B;
-}
-
-.lavender_page a:hover, a:focus{
-	text-decoration: underline;
-	color:#A3A86B;
-}
-
-.lavender_page a:active {
-	text-decoration:none;
-	color:#A3A86B;
-}
-
-.lavender_page h1 {
-	color: #A3A86B;
-}
-
-/* PAPAYA */
-
-
-.papaya_page a {
-	text-decoration:none;
-	color:#FFD65A;
-}
-
-.papaya_page a:hover, a:focus{
-	text-decoration: underline;
-	color:#FFD65A;
-}
-
-.papaya_page a:active {
-	text-decoration:none;
-	color:#FFD65A;
-}
-
-.papaya_page h1 {
-	color: #FFD65A;
-}
-
-/* SEAFOAM */
-
-.seafoam_page a {
-	text-decoration:none;
-	color:#99CCC3;
-}
-
-.seafoam_page a:hover, a:focus{
-	text-decoration: underline;
-	color:#99CCC3;
-}
-
-.seafoam_page a:active {
-	text-decoration:none;
-	color:#99CCC3;
-}
-
-.seafoam_page h1 {
-	color: #99CCC3;
-}
-
-/* ORANGE */
-
-.orange_page a {
-	text-decoration:none;
-	color:#C75B12;
-}
-
-.orange_page a:hover, a:focus{
-	text-decoration: underline;
-	color:#C75B12;
-}
-
-.orange_page a:active {
-	text-decoration:none;
-	color:#C75B12;
-}
-
-.orange_page h1 {
-	color: #C75B12;
-}
 
 
 
 /* Side Page Graphics */
 
-.field-name-field-graphic {
-	display:none;
-}
-
 #rh_bot_copy {
-	font-family:Verdana, Geneva, sans-serif;
-	font-size:12px;
-	float:left;
 	width:683px;
-	background-color:#fff;
-	padding: 25px 25px 30px 25px;
 }
 
 .page-node-51 #rh_bot_copy {
@@ -1023,12 +1334,8 @@ border-top: 0px none;
 	width:157px;
 	padding-left:6px;
 	margin-left:10px;
-	margin-top:40px;
+	margin-top:45px;
 	border:1px solid black;
-}
-
-.front #block-webresavail-availability-query {
-  margin-top:60px;
 }
 
 #block-webresavail-availability-query .form-item {
@@ -1223,84 +1530,9 @@ border-top: 0px none;
 	border-bottom:1px solid #BDB1A6;
 }
 
-#footer {
-	float:left;
-	width:100%;
 }
 
 
 
-/* Group Request Form */
-
-.node-type-webform .submitted {
-	display:none;
-}
-
-.webform-client-form .form-item {
-	clear:left;
-}
-
-#webform-component-name label,
-#webform-component-title label,
-#webform-component-organization label,
-#webform-component-street label,
-#webform-component-city label,
-#webform-component-state label,
-#webform-component-zip-postal-code label,
-#webform-component-country label,
-#webform-component-phone label,
-#webform-component-number-of-attendees label,
-#webform-component-number-of-guest-rooms label,
-#webform-component-further-accommodation-requests label,
-#webform-component-arrival-date label,
-#webform-component-departure-date label,
-#webform-component-dates-flexible label,
-#webform-component-shuttle-needed label,
-#webform-component-luggage-handling-needed label,
-#webform-component-preferred-room-set-up label,
-#webform-component-audio-visual-requirements label,
-#webform-component-group-type label,
-#webform-component-email label {
-	float:left;
-	width:250px;
-	text-align:right;
-	clear:left;
-}
-
-#webform-component-number-of-guest-rooms label {margin-right:1em;}
-
-#webform-component-shuttle-needed .form-radios label,
-#webform-component-luggage-handling-needed .form-radios label,
-#webform-component-dates-flexible .form-radios label {
-	width:auto;
-	text-align:left;
-	float:none;
-}
-
-
-#webform-component-pref-communication ,
-#webform-component-food--beverage-requirements,
-#webform-component-spa,
-#webform-component-adventures,
-#webform-component-meeting-room-requirements,
-#webform-component-additional-comments,
-#webform-component-how-did-you-hear-about-us {
-    float:left;
-	margin-left:100px;
-	clear:both;
-
-}
-
-.webform-client-form #edit-actions {
-	float:left;
-	clear:both;
-	margin-left:40%;
-	margin-bottom:40px;
-}
-
-.node-webform .field-name-body {
-	margin: 5px 25px;
-}
-	
 
 
