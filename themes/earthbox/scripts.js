@@ -1,7 +1,10 @@
+/* www.earthboxinn.com scripts.js */
+
 function EmbedBookingRequest_OnLoad2()
 	{
 	(function($) {
-		$("#date_from").datepicker({dateFormat:'mm-dd-yy',beforeShowDay: checkDate});
+		//$("#date_from").datepicker({dateFormat:'mm-dd-yy',beforeShowDay: checkDate});
+		$("#date_from").datepicker({ dateFormat: "yy-mm-dd"}).datepicker("setDate", "0");
 		})(jQuery);
 								    
 	}

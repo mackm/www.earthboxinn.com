@@ -1,5 +1,6 @@
 <?php
 
+// www.earthboxinn.com webresavail.module
 //
 // Sets the search date fields of the availability search for to the current date range if
 // we are currently showing availability results.
@@ -84,7 +85,6 @@ function webresavail_availability_form($formstate){
 // if a valid date range is not specified
 //
 function webresavail_availability_form_validate($form, &$form_state) {
-     //drupal_set_message('In Form Validate');
    
      $date_from = strtotime($form['date_from']['#value']['date']);
      
@@ -132,7 +132,7 @@ function webresavail_block_view($delta='')
 {
   switch($delta) {
     case 'availability_query':
-      $block['subject'] = null; // Most forms don't have a subject 
+      $block['subject'] = null; 
       $block['content'] = drupal_get_form('webresavail_availability_form');
       break;
    }
